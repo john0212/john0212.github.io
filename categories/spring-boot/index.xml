@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Spring boot on John&#39;s的家</title>
+    <link>https://john0212.github.io/categories/spring-boot/</link>
+    <description>Recent content in Spring boot on John&#39;s的家</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Mon, 21 Nov 2022 15:42:00 +0800</lastBuildDate><atom:link href="https://john0212.github.io/categories/spring-boot/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Spring Boot IoC 2-2 重點</title>
+      <link>https://john0212.github.io/blog/2-2/</link>
+      <pubDate>Mon, 21 Nov 2022 15:42:00 +0800</pubDate>
+      
+      <guid>https://john0212.github.io/blog/2-2/</guid>
+      <description>2-2 章 @component 用法:只能加在 class 上 用途:將該 class 變成由 Spring 容器所管理的 object ，那這些 object 會被稱作為 bean(這個 bean 名字為 class name 的第一個字母轉小寫) 專有名詞 Ioc(Inversion of Control)控制反轉:會將 object 存放在 spring 容器裡面 DI(Dependency Injection)依賴注入:會讓我們去取得存放在 spring 容器裡面的那些 object bean:存放在 spring 容器裡的 object @Autowired:加在變數上，取得 spring 容器中的 bean </description>
+    </item>
+    
+  </channel>
+</rss>
