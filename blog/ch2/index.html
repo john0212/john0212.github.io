@@ -5,7 +5,7 @@
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="我的心得分享">
+  <meta name="description" content="介紹spring boot">
   <meta name="author" content="John">
     
   
@@ -125,120 +125,130 @@
 </header>
 <!-- /navigation -->
 
-
 <section class="section-sm">
   <div class="container">
     <div class="row">
-      <div class="col-lg-8 mb-5 mb-lg-0">
-        <div class="row">
-          
-          
-          <div class="col-md-6 mb-4">
-    <article class="card">
+      <div class="col-lg-8 mx-auto">
         
-        <div class="card-body px-0">
+        <a href="/categories/spring-boot"
+          class="text-primary">Spring boot</a>
         
-        <a href="https://john0212.github.io/categories/spring-boot/" class="h5 d-block my-3">Spring Boot</a>
+        <h2>Spring Boot IoC 重點</h2>
         <div class="mb-3 post-meta">
-            <span>By John</span>
-            
-            <span class="border-bottom border-primary px-2 mx-1"></span>
-            <span>01 January 0001</span>
-            
-        </div>
-        <p class="card-text"></p>
-        <a href="https://john0212.github.io/categories/spring-boot/" class="btn btn-outline-primary">read more</a>
-        </div>
-    </article>
-</div>
+          <span>By John</span>
           
-          <div class="col-md-6 mb-4">
-    <article class="card">
-        
-        <div class="card-body px-0">
-        
-        <a href="https://john0212.github.io/categories/%E5%BF%83%E5%BE%97/" class="h5 d-block my-3">心得</a>
-        <div class="mb-3 post-meta">
-            <span>By John</span>
-            
-            <span class="border-bottom border-primary px-2 mx-1"></span>
-            <span>01 January 0001</span>
-            
-        </div>
-        <p class="card-text"></p>
-        <a href="https://john0212.github.io/categories/%E5%BF%83%E5%BE%97/" class="btn btn-outline-primary">read more</a>
-        </div>
-    </article>
-</div>
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>21 November 2022</span>
           
         </div>
-      </div>
-      
-      <div class="col-lg-4">
-  <div class="widgets">
-    
-    <div class="widget">
-      
-      <h4 class="widget-title">About Me</h4>
-      
-      <img src="https://john0212.github.io/images/mypic.jpg" alt=""
-        class="img-fluid author-thumb-sm d-block mx-auto rounded-circle mb-4">
-      
-      <p>我是一位正在努力學習網頁製作的設計師，透過網路課程及網站資源來進行練習，
-之後也會專研其他程式語言，希望有朝一日能成為能獨自開發的程式設計師。</p>
-      <a href="https://john0212.github.io/about/" class="btn btn-outline-primary">Know More</a>
-      
-    </div>
-    
-    <div class="widget">
-      <h4 class="widget-title">Category</h4>
-      <ul class="list-unstyled">
-        <li><a
-            href="/categories/spring-boot/">Spring boot</a>
-        </li>
-        <li><a
-            href="/categories/%e5%bf%83%e5%be%97/">心得</a>
-        </li>
-      </ul>
-    </div>
-    
-    <div class="widget">
-      <h4 class="widget-title">Tag</h4>
-      <ul class="list-inline">
-        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
-            href="/tags/java/">Java</a></li>
-      </ul>
-    </div>
-    
-    <div class="widget">
-      <h4 class="widget-title">Social</h4>
-      <ul class="list-inline social-links">
         
-        <li class="list-inline-item"><a href="https://www.facebook.com/profile.php?id=100003173254066"><i class="ti-facebook"></i></a></li>
-        
-        <li class="list-inline-item"><a href="https://www.instagram.com/john__0212/"><i class="ti-instagram"></i></a></li>
-        
-        <li class="list-inline-item"><a href="https://github.com/john0212"><i class="ti-github"></i></a></li>
-        
-      </ul>
-    </div>
-    
-    <div class="widget">
-      <img src="https://john0212.github.io/images/promotion.png" alt="" class="img-fluid">
-    </div>
-  </div>
-</div>
+        <div class="content mb-5">
+          <h3 id="2-2-章">2-2 章</h3>
+<h6 id="component">@component</h6>
+<ol>
+<li>用法:只能加在 <strong>class</strong> 上</li>
+<li>用途:將該 class 變成由 Spring 容器所管理的 object ，那這些 object 會被稱作為 bean(這個 bean 名字為 class name 的第一個字母轉小寫)</li>
+</ol>
+<h6 id="專有名詞">專有名詞</h6>
+<ol>
+<li><strong>Ioc(Inversion of Control)控制反轉</strong>:會將 object 存放在 spring 容器裡面</li>
+<li><strong>DI(Dependency Injection)依賴注入</strong>:會讓我們去取得存放在 spring 容器裡面的那些 object</li>
+<li><strong>bean</strong>:存放在 spring 容器裡的 object</li>
+<li><strong>@Autowired</strong>:加在變數上，取得 spring 容器中的 bean</li>
+</ol>
+<h3 id="2-3-章">2-3 章</h3>
+<h6 id="autowired">@Autowired</h6>
+<ol>
+<li>用法:通常加在 <strong>class</strong> 變數上</li>
+<li>用途:根據<strong>變數的類型</strong>，去 spring 容器中尋找有沒有符合類型的 bean</li>
+</ol>
+<h6 id="qualifier">@Qualifier</h6>
+<ol>
+<li>用法:通常是加在 class 變數上，會跟@Autowired 一起使用</li>
+<li>用途:指定要載入的 bean 的名字</li>
+</ol>
+<h3 id="2-4-章">2-4 章</h3>
+<h6 id="bean-的創建方式這兩個是可以同時使用的">Bean 的創建方式，這兩個是可以同時使用的</h6>
+<ol>
+<li>在 class 上加上@Component 註解</li>
+<li>使用@Configuration+@Bean 註解</li>
+</ol>
+<h6 id="configuration">@Configuration</h6>
+<ol>
+<li>用法:只能加在<strong>class</strong>上</li>
+<li>用途:spring 中的<strong>設定用註解</strong>，表示這個 class 是拿來設定 spring 用的</li>
+</ol>
+<h6 id="bean">@Bean</h6>
+<ol>
+<li>用法:只能加在帶有 <strong>@Configuration</strong> class 的方法上</li>
+<li>用途:在 spring 容器中創建一個 bean</li>
+</ol>
+<h3 id="2-5-章">2-5 章</h3>
+<h6 id="spring-中初始化-bean-的方法一次只要選一種使用就好">spring 中初始化 bean 的方法，一次只要選一種使用就好</h6>
+<ol>
+<li>使用@PostConstruct(較常用)，有幾個細節要注意
+<ul>
+<li>方法一定要為 public</li>
+<li>返回類型一定要是 void</li>
+<li>方法名字可以隨意取</li>
+<li>不能有參數</li>
+</ul>
+</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#a6e22e">@PostConstruct</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">initialize</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// 要做的事
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#f92672">}</span>
+</span></span></code></pre></div><ol start="2">
+<li>實現 InitializingBean interface 的 afterPropertiesSet() 方法</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#75715e">// 要先實作 InitializingBean，之後去實作 afterPropertiesSet() method
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">@Override</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">afterPropertiesSet</span><span style="color:#f92672">()</span> <span style="color:#66d9ef">throws</span> Exception <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// 要做的事
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#f92672">}</span>
+</span></span></code></pre></div><h3 id="2-6-章">2-6 章</h3>
+<h6 id="bean-的生命週期重點">Bean 的生命週期重點</h6>
+<ol>
+<li>Bean 的生命週期 : <strong>創建-&gt;初始化-&gt;可以被別人拿去使用</strong></li>
+<li>創建時若有依賴其他 Bean，則 Spring 會回過頭去 [創建+初始化] 那個被依賴的 Bean</li>
+<li>不要寫出循環依賴的 code</li>
+</ol>
+<h3 id="2-7-章">2-7 章</h3>
+<h6 id="spring-boot-設定檔---applicationproperties">Spring Boot 設定檔 - application.properties</h6>
+<ol>
+<li>用法:使用 properties 語法 (key=value)</li>
+<li>用途:存放 Spring Boot 的設定值</li>
+</ol>
+<h6 id="value">@Value</h6>
+<ol>
+<li>用法:加在<strong>Bean</strong>或是<strong>設定 Spring 用的 class</strong>裡面的<strong>變數</strong>上</li>
+<li>用途:讀取 Spring Boot 設定檔 (application.properties) 中指定的 Key 的值</li>
+<li>使用@Value 有幾個重點要注意
+<ul>
+<li>可以加在帶有@Component 或@Configuration 上</li>
+<li>格式必須為 ${key}</li>
+<li>變數所使用的類型，必須要跟 Spring Boot 設定檔中那個 key 所對應的類型一樣才行</li>
+<li>可以設定預設值。當找不到對應的 key 時，就會用此預設值。</li>
+</ul>
+</li>
+</ol>
 
-      
+        </div>
 
-      
-      <div class="col-12 mt-5">
         
+        <script src="https://utteranc.es/client.js"
+        label="comment"
+        repo="john0212/john0212.github.io"
+        issue-term="title"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+        </script>
       </div>
     </div>
   </div>
 </section>
-
 
 
 

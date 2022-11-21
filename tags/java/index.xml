@@ -9,20 +9,20 @@
     <lastBuildDate>Mon, 21 Nov 2022 16:05:00 +0800</lastBuildDate><atom:link href="https://john0212.github.io/tags/java/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Spring Boot IoC 2-3 重點</title>
-      <link>https://john0212.github.io/blog/2-3/</link>
+      <link>https://john0212.github.io/blog/ch3/</link>
       <pubDate>Mon, 21 Nov 2022 16:05:00 +0800</pubDate>
       
-      <guid>https://john0212.github.io/blog/2-3/</guid>
-      <description>2-3 章 @Autowired 用法:通常加在 class 變數上 用途:根據變數的類型，去 spring 容器中尋找有沒有符合類型的 bean @Qualifier 用法:通常是加在 class 變數上，會跟@Autowired 一起使用 用途:指定要載入的 bean 的名字 </description>
+      <guid>https://john0212.github.io/blog/ch3/</guid>
+      <description></description>
     </item>
     
     <item>
-      <title>Spring Boot IoC 2-2 重點</title>
-      <link>https://john0212.github.io/blog/2-2/</link>
+      <title>Spring Boot IoC 重點</title>
+      <link>https://john0212.github.io/blog/ch2/</link>
       <pubDate>Mon, 21 Nov 2022 15:42:00 +0800</pubDate>
       
-      <guid>https://john0212.github.io/blog/2-2/</guid>
-      <description>2-2 章 @component 用法:只能加在 class 上 用途:將該 class 變成由 Spring 容器所管理的 object ，那這些 object 會被稱作為 bean(這個 bean 名字為 class name 的第一個字母轉小寫) 專有名詞 Ioc(Inversion of Control)控制反轉:會將 object 存放在 spring 容器裡面 DI(Dependency Injection)依賴注入:會讓我們去取得存放在 spring 容器裡面的那些 object bean:存放在 spring 容器裡的 object @Autowired:加在變數上，取得 spring 容器中的 bean </description>
+      <guid>https://john0212.github.io/blog/ch2/</guid>
+      <description>2-2 章 @component 用法:只能加在 class 上 用途:將該 class 變成由 Spring 容器所管理的 object ，那這些 object 會被稱作為 bean(這個 bean 名字為 class name 的第一個字母轉小寫) 專有名詞 Ioc(Inversion of Control)控制反轉:會將 object 存放在 spring 容器裡面 DI(Dependency Injection)依賴注入:會讓我們去取得存放在 spring 容器裡面的那些 object bean:存放在 spring 容器裡的 object @Autowired:加在變數上，取得 spring 容器中的 bean 2-3 章 @Autowired 用法:通常加在 class 變數上 用途:根據變數的類型，去 spring 容器中尋找有沒有符合類型的 bean @Qualifier 用法:通常是加在 class 變數上，會跟@Autowired 一起使用 用途:指定要載入的 bean 的名字 2-4 章 Bean 的創建方式，這兩個是可以同時使用的 在 class 上加上@Component 註解 使用@Configuration+@Bean 註解 @Configuration 用法:只能加在class上 用途:spring 中的設定用註解，表示這個 class 是拿來設定 spring 用的 @Bean 用法:只能加在帶有 @Configuration class 的方法上 用途:在 spring 容器中創建一個 bean 2-5 章 spring 中初始化 bean 的方法，一次只要選一種使用就好 使用@PostConstruct(較常用)，有幾個細節要注意 方法一定要為 public 返回類型一定要是 void 方法名字可以隨意取 不能有參數 @PostConstruct public void initialize() { // 要做的事 } 實現 InitializingBean interface 的 afterPropertiesSet() 方法 // 要先實作 InitializingBean，之後去實作 afterPropertiesSet() method @Override public void afterPropertiesSet() throws Exception { // 要做的事 } 2-6 章 Bean 的生命週期重點 Bean 的生命週期 : 創建-&amp;gt;初始化-&amp;gt;可以被別人拿去使用 創建時若有依賴其他 Bean，則 Spring 會回過頭去 [創建+初始化] 那個被依賴的 Bean 不要寫出循環依賴的 code 2-7 章 Spring Boot 設定檔 - application.</description>
     </item>
     
     <item>
