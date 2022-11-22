@@ -129,86 +129,8 @@
 <section class="section-sm">
   <div class="container">
     <div class="row">
-      <div class="col-lg-8 mb-5 mb-lg-0">
-        <div class="row">
-          
-          
-          <div class="col-md-6 mb-4">
-    <article class="card">
-        
-        <div class="card-body px-0">
-        
-        <a href="/categories/spring-boot"
-            class="text-primary">Spring boot</a>
-        
-        <a href="https://john0212.github.io/blog/ch3/" class="h5 d-block my-3">Spring Boot IoC 2-3 重點</a>
-        <div class="mb-3 post-meta">
-            <span>By John</span>
-            
-            <span class="border-bottom border-primary px-2 mx-1"></span>
-            <span>21 November 2022</span>
-            
-        </div>
-        <p class="card-text"></p>
-        <a href="https://john0212.github.io/blog/ch3/" class="btn btn-outline-primary">read more</a>
-        </div>
-    </article>
-</div>
-          
-          <div class="col-md-6 mb-4">
-    <article class="card">
-        
-        <div class="card-body px-0">
-        
-        <a href="/categories/spring-boot"
-            class="text-primary">Spring boot</a>
-        
-        <a href="https://john0212.github.io/blog/ch2/" class="h5 d-block my-3">Spring Boot IoC 重點</a>
-        <div class="mb-3 post-meta">
-            <span>By John</span>
-            
-            <span class="border-bottom border-primary px-2 mx-1"></span>
-            <span>21 November 2022</span>
-            
-        </div>
-        <p class="card-text">2-2 章 @component 用法:只能加在 class 上 用途:將該 class 變成由 Spring 容器所管理的 object ，那這些 object 會被稱作為 bean(這個 bean 名字為 class name 的第一個字母轉小寫) 專有名詞 Ioc(Inversion of Control)控制反轉:會將 object 存放在 spring 容器裡面 DI(Dependency Injection)依賴注入:會讓我們去取得存放在 spring 容器裡面的那些 object bean:存放在 spring 容器裡的 object @Autowired:加在變數上，取得 spring 容器中的 bean 2-3 章 @Autowired 用法:通常加在 class 變數上 用途:根據變數的類型，去 spring 容器中尋找有沒有符合類型的 bean @Qualifier 用法:通常是加在 class 變數上，會跟@Autowired 一起使用 用途:指定要載入的 bean 的名字 2-4 章 Bean 的創建方式，這兩個是可以同時使用的 在 class 上加上@Component 註解 使用@Configuration+@Bean 註解 @Configuration 用法:只能加在class上 用途:spring 中的設定用註解，表示這個 class 是拿來設定 spring 用的 @Bean 用法:只能加在帶有 @Configuration class 的方法上 用途:在 spring 容器中創建一個 bean 2-5 章 spring 中初始化 bean 的方法，一次只要選一種使用就好 使用@PostConstruct(較常用)，有幾個細節要注意 方法一定要為 public 返回類型一定要是 void 方法名字可以隨意取 不能有參數 @PostConstruct public void initialize() { // 要做的事 } 實現 InitializingBean interface 的 afterPropertiesSet() 方法 // 要先實作 InitializingBean，之後去實作 afterPropertiesSet() method @Override public void afterPropertiesSet() throws Exception { // 要做的事 } 2-6 章 Bean 的生命週期重點 Bean 的生命週期 : 創建-&gt;初始化-&gt;可以被別人拿去使用 創建時若有依賴其他 Bean，則 Spring 會回過頭去 [創建+初始化] 那個被依賴的 Bean 不要寫出循環依賴的 code 2-7 章 Spring Boot 設定檔 - application.</p>
-        <a href="https://john0212.github.io/blog/ch2/" class="btn btn-outline-primary">read more</a>
-        </div>
-    </article>
-</div>
-          
-          <div class="col-md-6 mb-4">
-    <article class="card">
-        
-        <img src="https://john0212.github.io/images/post/post-3.jpg" class="card-img-top" alt="MarkDown語法練習及Hugo操作">
-        
-        <div class="card-body px-0">
-        
-        <a href="/categories/%e5%bf%83%e5%be%97"
-            class="text-primary">心得</a>
-        
-        <a href="https://john0212.github.io/blog/test/" class="h5 d-block my-3">MarkDown語法練習及Hugo操作</a>
-        <div class="mb-3 post-meta">
-            <span>By John</span>
-            
-            <span class="border-bottom border-primary px-2 mx-1"></span>
-            <span>21 November 2022</span>
-            
-        </div>
-        <p class="card-text">內文(兩行中間要空一行才能在網頁也呈現空行的樣子)
-Hello world
-我是 John
-一級標題 二級標題 Hello 在想要加粗體字的前後都加上兩個*就會變成粗體了
-在想要加粗體字的前後都加上一個*就會變成粗體了</p>
-        <a href="https://john0212.github.io/blog/test/" class="btn btn-outline-primary">read more</a>
-        </div>
-    </article>
-</div>
-          
-        </div>
-      </div>
       
-      <div class="col-lg-4">
+        <div class="col-lg-4">
   <div class="widgets">
     
     <div class="widget">
@@ -257,13 +179,80 @@ Hello world
       </ul>
     </div>
     
-    <div class="widget">
-      <img src="https://john0212.github.io/images/promotion.png" alt="" class="img-fluid">
-    </div>
   </div>
 </div>
 
       
+      <div class="col-lg-8 mb-5 mb-lg-0">
+        <div class="row">
+          
+          
+          <div class="col-md-6 mb-4">
+    <article class="card">
+        <div class="card-body px-0">
+        
+        <a href="/categories/spring-boot"
+            class="text-primary">Spring boot</a>
+        
+        <a href="https://john0212.github.io/blog/ch3/" class="h5 d-block my-3">Spring Boot IoC 2-3 重點</a>
+        <div class="mb-3 post-meta">
+            <span>By John</span>
+            
+            <span class="border-bottom border-primary px-2 mx-1"></span>
+            <span>2022-11-21</span>
+            
+        </div>
+        <p class="card-text">介紹MarkDown</p>
+        <a href="https://john0212.github.io/blog/ch3/" class="btn btn-outline-primary">read more</a>
+        </div>
+    </article>
+</div>
+          
+          <div class="col-md-6 mb-4">
+    <article class="card">
+        <div class="card-body px-0">
+        
+        <a href="/categories/spring-boot"
+            class="text-primary">Spring boot</a>
+        
+        <a href="https://john0212.github.io/blog/ch2/" class="h5 d-block my-3">Spring Boot IoC 重點</a>
+        <div class="mb-3 post-meta">
+            <span>By John</span>
+            
+            <span class="border-bottom border-primary px-2 mx-1"></span>
+            <span>2022-11-21</span>
+            
+        </div>
+        <p class="card-text">介紹 Spring Boot 用法</p>
+        <a href="https://john0212.github.io/blog/ch2/" class="btn btn-outline-primary">read more</a>
+        </div>
+    </article>
+</div>
+          
+          <div class="col-md-6 mb-4">
+    <article class="card">
+        <div class="card-body px-0">
+        
+        <a href="/categories/%e5%bf%83%e5%be%97"
+            class="text-primary">心得</a>
+        
+        <a href="https://john0212.github.io/blog/test/" class="h5 d-block my-3">MarkDown語法練習及Hugo操作</a>
+        <div class="mb-3 post-meta">
+            <span>By John</span>
+            
+            <span class="border-bottom border-primary px-2 mx-1"></span>
+            <span>2022-11-21</span>
+            
+        </div>
+        <p class="card-text">介紹MarkDown及Hugo</p>
+        <a href="https://john0212.github.io/blog/test/" class="btn btn-outline-primary">read more</a>
+        </div>
+    </article>
+</div>
+          
+        </div>
+      </div>
+
 
       
       <div class="col-12 mt-5">
@@ -276,68 +265,7 @@ Hello world
 
 
 
-<footer class="text-capitalize">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-12 text-center mb-5">
-        <a href="https://john0212.github.io"><img src="https://john0212.github.io/images/volleyball.png" alt="John&#39;s的家"></a>
-      </div>
-               
-      <div class="col-lg-3 col-sm-6 mb-5">
-        <h6 class="mb-4">Contact Me</h6>
-        <ul class="list-unstyled">
-          
-          <li class="mb-3"><a class="text-dark" href="tel:0975773538"><i
-                class="ti-mobile mr-3 text-primary"></i>0975773538</a></li>
-          
-                     
-          <li class="mb-3"><i class="ti-location-pin mr-3 text-primary"></i>Kaohsiung, Taiwan</li>
-          
-                     
-          <li class="mb-3"><a class="text-dark" href="mailto:df850044@gmail.com"><i
-                class="ti-email mr-3 text-primary"></i>df850044@gmail.com</a>
-          
-          </li>
-        </ul>
-      </div>
-      
-      <div class="col-lg-3 col-sm-6 mb-5">
-        <h6 class="mb-4">Social Contacts</h6>
-        <ul class="list-unstyled">
-          
-          <li class="mb-3"><a class="text-dark" href="https://www.facebook.com/profile.php?id=100003173254066">facebook</a></li>
-          
-          <li class="mb-3"><a class="text-dark" href="https://www.instagram.com/john__0212/">instagram</a></li>
-          
-          <li class="mb-3"><a class="text-dark" href="https://github.com/john0212">github</a></li>
-          
-        </ul>
-      </div>
-      <div class="col-lg-3 col-sm-6 mb-5">
-        <h6 class="mb-4">Categories</h6>
-        <ul class="list-unstyled">
-          <li class="mb-3"><a class="text-dark"
-              href="/categories/spring-boot/">Spring boot</a>
-          </li>
-          <li class="mb-3"><a class="text-dark"
-              href="/categories/%e5%bf%83%e5%be%97/">心得</a>
-          </li>
-        </ul>
-      </div>
-      <div class="col-lg-3 col-sm-6 mb-5">
-        <h6 class="mb-4">Quick Links</h6>
-        <ul class="list-unstyled">
-          
-          <li class="mb-3"><a class="text-dark" href="https://john0212.github.io/about/">About</a></li>
-          
-        </ul>
-      </div>
-      <div class="col-12 border-top py-4 text-center">
-        | copyright © 2021 <a href="https://themefisher.com/hugo-themes/">Themefisher</a> All Rights Reserved |
-      </div>
-    </div>
-  </div>
-</footer>
+
 
 <script>
   var indexURL = "https://john0212.github.io/index.json"
