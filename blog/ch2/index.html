@@ -128,10 +128,10 @@
 <section class="section-sm">
   <div class="container">
     <div class="row">
-      <div class="col-lg-8 mx-auto">
+      <div class="col-lg-10 mx-auto">
         
-        <a href="/categories/spring-boot"
-          class="text-primary">Spring boot</a>
+        <a href="/categories/%e5%80%8b%e4%ba%ba%e7%ad%86%e8%a8%98"
+          class="text-primary">個人筆記</a>
         
         <h2>Spring Boot IoC 重點</h2>
         <div class="mb-3 post-meta">
@@ -195,18 +195,18 @@
 </ul>
 </li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#a6e22e">@PostConstruct</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">initialize</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// 要做的事
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#f92672">}</span>
+<div class="highlight"><pre tabindex="0" style="color:#2f1e2e;background-color:#e7e9db;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#5bc4bf">@PostConstruct</span>
+</span></span><span style="display:flex;"><span><span style="color:#815ba4">public</span> <span style="color:#fec418">void</span> <span style="color:#06b6ef">initialize</span><span style="color:#5bc4bf">()</span> <span style="color:#5bc4bf">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#8d8687">// 要做的事
+</span></span></span><span style="display:flex;"><span><span style="color:#8d8687"></span><span style="color:#5bc4bf">}</span>
 </span></span></code></pre></div><ol start="2">
 <li>實現 InitializingBean interface 的 afterPropertiesSet() 方法</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#75715e">// 要先實作 InitializingBean，之後去實作 afterPropertiesSet() method
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">@Override</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">afterPropertiesSet</span><span style="color:#f92672">()</span> <span style="color:#66d9ef">throws</span> Exception <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// 要做的事
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#f92672">}</span>
+<div class="highlight"><pre tabindex="0" style="color:#2f1e2e;background-color:#e7e9db;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#8d8687">// 要先實作 InitializingBean，之後去實作 afterPropertiesSet() method
+</span></span></span><span style="display:flex;"><span><span style="color:#8d8687"></span><span style="color:#5bc4bf">@Override</span>
+</span></span><span style="display:flex;"><span><span style="color:#815ba4">public</span> <span style="color:#fec418">void</span> <span style="color:#06b6ef">afterPropertiesSet</span><span style="color:#5bc4bf">()</span> <span style="color:#815ba4">throws</span> Exception <span style="color:#5bc4bf">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#8d8687">// 要做的事
+</span></span></span><span style="display:flex;"><span><span style="color:#8d8687"></span><span style="color:#5bc4bf">}</span>
 </span></span></code></pre></div><h3 id="2-6-章">2-6 章</h3>
 <h6 id="bean-的生命週期重點">Bean 的生命週期重點</h6>
 <ol>
@@ -302,7 +302,7 @@
 </script>
 
 
-<style>
+ <style>
 .cookie-box {
   position: fixed;
   left: 0;

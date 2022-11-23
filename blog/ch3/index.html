@@ -5,7 +5,7 @@
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="介紹MarkDown">
+  <meta name="description" content="介紹 Spring Boot AOP">
   <meta name="author" content="John">
     
   
@@ -128,22 +128,59 @@
 <section class="section-sm">
   <div class="container">
     <div class="row">
-      <div class="col-lg-8 mx-auto">
+      <div class="col-lg-10 mx-auto">
         
-        <a href="/categories/spring-boot"
-          class="text-primary">Spring boot</a>
+        <a href="/categories/%e5%80%8b%e4%ba%ba%e7%ad%86%e8%a8%98"
+          class="text-primary">個人筆記</a>
         
-        <h2>Spring Boot IoC 2-3 重點</h2>
+        <h2>Spring Boot AOP 重點</h2>
         <div class="mb-3 post-meta">
           <span>By John</span>
           
           <span class="border-bottom border-primary px-2 mx-1"></span>
-          <span>21 November 2022</span>
+          <span>23 November 2022</span>
           
         </div>
         
         <div class="content mb-5">
-          
+          <h3 id="3-2-章">3-2 章</h3>
+<p>如果要在 spring boot 中使用 spring AOP(Aspect-Oriented Programming,切面導向程式設計) 的話，就要使用到 @Aspect 註解</p>
+<p>AOP 概念就是將所有方法都要執行的共同邏輯，去統一的寫在切面裡面，並且讓這個切面去橫貫所有的方法，替所有的方法去執行這個共同邏輯</p>
+<h6 id="aspect">@Aspect</h6>
+<ol>
+<li>用法:加在 class 上 (需和 @Component 一起使用，也就是這個 class 必須要先成為一個 bean，他才能成為一個切面)</li>
+<li>用途:宣告這個 class 是一個切面</li>
+</ol>
+<h6 id="before">@Before</h6>
+<ol>
+<li>用法:加在切面 class 的方法上</li>
+<li>用途:再切入點的方法<strong>執行前</strong>執行</li>
+</ol>
+<p><img src="/images/before.png" alt=""></p>
+<h6 id="after">@After</h6>
+<ol>
+<li>用法:加在切面 class 的方法上</li>
+<li>用途:再切入點的方法<strong>執行後</strong>執行</li>
+</ol>
+<p><img src="/images/after.png" alt=""></p>
+<h6 id="around">@Around</h6>
+<ol>
+<li>用法:加在切面 class 的方法上</li>
+<li>用途:再切入點的方法<strong>執行前、後</strong>執行</li>
+</ol>
+<p><img src="/images/around.png" alt=""></p>
+<p>除了上面幾個較常用的註解外，還有一些比較不常用的，像是</p>
+<p>@AfterThrowing : 再切入點的方法<strong>拋出異常後</strong>執行</p>
+<p>@AfterReturning : 再切入點的方法<strong>執行成功後</strong>執行</p>
+<h6 id="常見的切入點表達式">常見的切入點表達式</h6>
+<p><img src="/images/method.png" alt=""></p>
+<h6 id="spring-aop-的發展">Spring AOP 的發展</h6>
+<ol>
+<li>權限驗證 <strong>Spring Security</strong></li>
+<li>統一的 Exception 處理 <strong>@ControllerAdvice</strong></li>
+<li>Log 記錄</li>
+</ol>
+
         </div>
 
         
@@ -212,7 +249,7 @@
 </script>
 
 
-<style>
+ <style>
 .cookie-box {
   position: fixed;
   left: 0;

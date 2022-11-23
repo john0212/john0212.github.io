@@ -6,14 +6,14 @@
     <description>Recent content in Blogs on John&#39;s的家</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Mon, 21 Nov 2022 16:05:00 +0800</lastBuildDate><atom:link href="https://john0212.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 23 Nov 2022 10:18:00 +0800</lastBuildDate><atom:link href="https://john0212.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Spring Boot IoC 2-3 重點</title>
+      <title>Spring Boot AOP 重點</title>
       <link>https://john0212.github.io/blog/ch3/</link>
-      <pubDate>Mon, 21 Nov 2022 16:05:00 +0800</pubDate>
+      <pubDate>Wed, 23 Nov 2022 10:18:00 +0800</pubDate>
       
       <guid>https://john0212.github.io/blog/ch3/</guid>
-      <description></description>
+      <description>3-2 章 如果要在 spring boot 中使用 spring AOP(Aspect-Oriented Programming,切面導向程式設計) 的話，就要使用到 @Aspect 註解</description>
     </item>
     
     <item>
@@ -35,7 +35,7 @@
 Hello world
 我是 John
 一級標題 二級標題 Hello 在想要加粗體字的前後都加上兩個*就會變成粗體了
-在想要加粗體字的前後都加上一個*就會變成粗體了</description>
+在想要加粗體字的前後都加上一個*就會變成斜體了</description>
     </item>
     
   </channel>
