@@ -6,7 +6,16 @@
     <description>Recent content in Spring Boot on John&#39;s的家</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Wed, 23 Nov 2022 10:18:00 +0800</lastBuildDate><atom:link href="https://john0212.github.io/tags/spring-boot/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 23 Nov 2022 15:15:00 +0800</lastBuildDate><atom:link href="https://john0212.github.io/tags/spring-boot/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Spring MVC 重點</title>
+      <link>https://john0212.github.io/blog/ch4/</link>
+      <pubDate>Wed, 23 Nov 2022 15:15:00 +0800</pubDate>
+      
+      <guid>https://john0212.github.io/blog/ch4/</guid>
+      <description>4-2 章 Http 協議 負責規定資料的傳輸格式，讓前後端能夠有效的進行資料溝通，可以分成 request (請求) 和 response (回應)</description>
+    </item>
+    
     <item>
       <title>Spring Boot AOP 重點</title>
       <link>https://john0212.github.io/blog/ch3/</link>
